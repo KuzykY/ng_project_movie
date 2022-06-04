@@ -10,7 +10,7 @@ import {MovieService} from "../../services/movie.service";
 })
 export class MoviesByGenreComponent implements OnInit {
   movies: IMovie[];
-  page: number
+  page: number;
 
   constructor(private movieService: MovieService, private activatedRoute: ActivatedRoute) {
   }

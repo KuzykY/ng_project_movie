@@ -9,7 +9,7 @@ import {IMovie} from "../../interfaces/movie.interface";
   styleUrls: ['./movie.component.css']
 })
 export class MovieComponent implements OnInit {
-  rate: number
+  rate: number;
   @Input()
   movie: IMovie;
 

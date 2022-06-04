@@ -1,0 +1,12 @@
+<div *ngIf="movie" class="movieDetails">
+  <div class="img_poster"><img src="https://image.tmdb.org/t/p/w500{{movie.backdrop_path}}" alt="movie_poster"></div>
+  <div class="">
+    <div class=""><h3>{{movie.title}}</h3>
+      <span class=""> ID:{{movie.id}}</span>
+    </div>
+    <div> Original language : <span>{{movie.original_language}}</span></div>
+    <div>
+      Overview: <span>{{movie.overview}}</span>
+    </div>
+  </div>
+</div>

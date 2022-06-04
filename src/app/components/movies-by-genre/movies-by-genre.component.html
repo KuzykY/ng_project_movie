@@ -1,0 +1,6 @@
+<div *ngIf="movies">
+  <div *ngFor="let movie of movies">
+    <img src="https://image.tmdb.org/t/p/w500/{{movie?.poster_path}}">
+    <div>{{movie.title}}</div>
+  </div>
+</div>

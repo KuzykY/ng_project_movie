@@ -1,0 +1,9 @@
+<div class="wrap">
+  <app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
+</div>
+<router-outlet></router-outlet>
+<div class="pagination">
+  <button (click)="next()" *ngIf="page != 500">Next page</button>
+  <p *ngIf="page">Current page: {{page}}</p>
+  <button (click)="prev()" *ngIf="page != 1">Previous page</button>
+</div>

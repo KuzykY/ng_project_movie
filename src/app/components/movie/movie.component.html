@@ -3,4 +3,6 @@
     <img src="https://image.tmdb.org/t/p/w300{{movie.backdrop_path}}" alt="logo_films">
     <h4>{{movie.original_title}}</h4>
   </div>
+  <div>Average vote: {{movie.vote_average}}</div>
+  <div><ngx-star-rating ngModel="{{rating(movie.vote_average)}}" [id]="movie.id.toString()" [disabled]="true"></ngx-star-rating></div>
 </div>

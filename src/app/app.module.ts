@@ -14,6 +14,7 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
 import { MovieComponent } from './components/movie/movie.component';
 import { MoviesByGenreComponent } from './components/movies-by-genre/movies-by-genre.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {AppRoutingModule} from "./app-routing.module";
     GenreComponent,
     MovieDetailsComponent,
     MovieComponent,
-    MoviesByGenreComponent
+    MoviesByGenreComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

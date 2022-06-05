@@ -1,6 +1,8 @@
+import { IResults } from "./result.interface";
+
 export interface ISearch {
   page: number;
-  results: ;
+  results:IResults[];
   total_pages: number;
   total_results: number;
 }

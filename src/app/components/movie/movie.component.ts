@@ -9,7 +9,7 @@ import {IMovie} from "../../interfaces/movie.interface";
   styleUrls: ['./movie.component.css']
 })
 export class MovieComponent implements OnInit {
-  rate: number;
+  // rate: number;
   @Input()
   movie: IMovie;
 
@@ -19,7 +19,7 @@ export class MovieComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(({id}) => {
       this.movieService.getDetails(id).subscribe((movie) => {
-        this.rate = movie.vote_average
+        // this.rate = movie.vote_average
         this.movie = movie
       })
     })

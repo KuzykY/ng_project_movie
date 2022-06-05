@@ -1,0 +1,8 @@
+<form [formGroup]="form">
+  <label>Search Movie: <input type="text" formControlName="search"></label>
+  <button [disabled]="form.invalid" (click)="search()">Search</button>
+  <hr>
+  <div *ngFor="let result of searchValue">{{result.name}}
+    <img src="https://image.tmdb.org/t/p/w200{{result.backdrop_path}}" alt="logo_films">
+  </div>
+</form>

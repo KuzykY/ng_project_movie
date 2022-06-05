@@ -6,6 +6,7 @@ import {MoviesComponent} from "./components/movies/movies.component";
 import {GenreBadgeComponent} from "./components/genre-badge/genre-badge.component";
 import {MovieDetailsComponent} from "./components/movie-details/movie-details.component";
 import {MoviesByGenreComponent} from "./components/movies-by-genre/movies-by-genre.component";
+import { SearchComponent } from './components/search/search.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,8 @@ const routes: Routes = [
       {path: 'movies/:id', component: MovieDetailsComponent},
       {path: 'genres', component: GenreBadgeComponent,children:[
           {path:':id',component:MoviesByGenreComponent}
-        ]}
+        ]},
+      {path: 'search',component: SearchComponent}
     ]
   }]
 

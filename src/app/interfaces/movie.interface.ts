@@ -1,4 +1,5 @@
-import {IGenres} from "./genre.interface";
+import { IGenres } from "./genre.interface";
+
 
 export interface IMovies {
   page: number;

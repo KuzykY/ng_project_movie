@@ -1,6 +1,6 @@
 <div *ngIf="movies" class="movies">
   <div *ngFor="let movie of movies">
-    <img src="https://image.tmdb.org/t/p/w500/{{movie?.poster_path}}">
+    <img src="https://image.tmdb.org/t/p/w500/{{movie?.poster_path}}" alt="logo_films">
     <div>{{movie.title}}</div>
   </div>
 </div>
